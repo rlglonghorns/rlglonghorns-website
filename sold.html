@@ -9,18 +9,14 @@
 </head>
 <body>
   <header class="site-header"><div class="header-inner"><div class="logo-wrap"><img src="images/ranch/ranch-logo.jpg" alt="RLG Longhorns Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">RLG Longhorns</span><span class="logo-sub">Cameron, Texas · Est. 2020</span></div></div><button class="nav-toggle">&#9776;</button><nav class="main-nav"><a href="index.html" class="nav-link">Home</a><a href="bulls.html" class="nav-link">Bulls</a><a href="cows.html" class="nav-link">Cows</a><a href="heifers.html" class="nav-link">Heifers</a><a href="steers.html" class="nav-link">Steers</a><a href="bull-calves.html" class="nav-link">Bull Calves</a><a href="sale-pen.html" class="nav-link">Sale Pen</a><a href="sold.html" class="nav-link active">Sold</a><a href="beef.html" class="nav-link">Longhorn Beef</a><a href="contact.html" class="nav-link nav-cta">Contact</a></nav></div></header>
-
   <div class="page-hero"><div class="container"><p class="section-eyebrow">RLG Longhorns</p><h1 class="section-title">Sold Longhorns</h1><p class="page-hero-sub">A look back at cattle that have gone to new homes</p></div></div>
-
   <section class="section"><div class="container">
-    <div class="sold-grid">
-      <div class="sold-card"><img src="images/sold/sold-1.jpg" alt="Sold Longhorn" /><span class="sold-badge">Sold</span></div>
-      <div class="sold-card"><img src="images/sold/sold-2.jpg" alt="Sold Longhorn" /><span class="sold-badge">Sold</span></div>
-      <div class="sold-card"><img src="images/sold/sold-3.jpg" alt="Sold Longhorn" /><span class="sold-badge">Sold</span></div>
-      <div class="sold-card"><img src="images/sold/sold-4.jpg" alt="Sold Longhorn" /><span class="sold-badge">Sold</span></div>
-    </div>
+    <div id="cattle-container" class="sold-grid"></div>
+    
   </div></section>
-
+  <section class="contact-strip"><div class="container contact-strip-inner"><div><h2 class="strip-title">Interested in Our Cattle?</h2><p class="strip-sub">Contact Robert directly for pricing and more information.</p></div><div class="strip-contact"><a href="tel:2546271160" class="strip-link">254-627-1160</a><a href="mailto:robert@rlglonghorns.com" class="strip-link">robert@rlglonghorns.com</a><a href="contact.html" class="btn btn-white">Send a Message</a></div></div></section>
   <footer class="site-footer"><div class="container footer-inner"><div class="footer-logo"><span class="logo-main">RLG Longhorns</span><span class="footer-location">Cameron, Texas</span></div><nav class="footer-nav"><a href="bulls.html">Bulls</a><a href="cows.html">Cows</a><a href="heifers.html">Heifers</a><a href="steers.html">Steers</a><a href="bull-calves.html">Bull Calves</a><a href="sale-pen.html">Sale Pen</a><a href="sold.html">Sold</a><a href="beef.html">Longhorn Beef</a><a href="contact.html">Contact</a></nav><p class="footer-copy">&copy; 2025 RLG Longhorns · All Rights Reserved</p></div></footer>
   <script src="js/main.js"></script>
+  <script src="js/cattle.js"></script>
+  <script>initCattlePage('sold', 'cattle-container', 'sold');</script>
 </body></html>
