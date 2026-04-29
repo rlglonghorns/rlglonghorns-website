@@ -1,0 +1,123 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "bulls"
+    label: "Bulls"
+    folder: "_data/bulls"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Registered Name", name: "title", widget: "string"}
+      - {label: "Sire", name: "sire", widget: "string"}
+      - {label: "Dam", name: "dam", widget: "string"}
+      - {label: "Date of Birth", name: "dob", widget: "string"}
+      - {label: "TLBAA Number", name: "tlbaa", widget: "string", default: "Pending"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Status", name: "status", widget: "select", options: ["Herd Sire - Not For Sale", "Available", "Sold"], default: "Available"}
+      - {label: "Price", name: "price", widget: "string", required: false, hint: "Leave blank to show 'Contact for Price'"}
+
+  - name: "cows"
+    label: "Cows"
+    folder: "_data/cows"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Registered Name", name: "title", widget: "string"}
+      - {label: "Sire", name: "sire", widget: "string"}
+      - {label: "Dam", name: "dam", widget: "string"}
+      - {label: "Date of Birth", name: "dob", widget: "string"}
+      - {label: "TLBAA Number", name: "tlbaa", widget: "string", default: "Pending"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Status", name: "status", widget: "select", options: ["Available", "Sold", "Not For Sale"], default: "Available"}
+      - {label: "Price", name: "price", widget: "string", required: false, hint: "Leave blank to show 'Contact for Price'"}
+
+  - name: "heifers"
+    label: "Heifers"
+    folder: "_data/heifers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Registered Name", name: "title", widget: "string"}
+      - {label: "Sire", name: "sire", widget: "string"}
+      - {label: "Dam", name: "dam", widget: "string"}
+      - {label: "Date of Birth", name: "dob", widget: "string"}
+      - {label: "TLBAA Number", name: "tlbaa", widget: "string", default: "Pending"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Status", name: "status", widget: "select", options: ["Available", "Sold", "Not For Sale"], default: "Available"}
+      - {label: "Price", name: "price", widget: "string", required: false, hint: "Leave blank to show 'Contact for Price'"}
+
+  - name: "steers"
+    label: "Steers"
+    folder: "_data/steers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Registered Name", name: "title", widget: "string"}
+      - {label: "Sire", name: "sire", widget: "string"}
+      - {label: "Dam", name: "dam", widget: "string"}
+      - {label: "Date of Birth", name: "dob", widget: "string"}
+      - {label: "TLBAA Number", name: "tlbaa", widget: "string", default: "Pending"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Status", name: "status", widget: "select", options: ["Available", "Not For Sale", "Sold"], default: "Not For Sale"}
+
+  - name: "bull_calves"
+    label: "Bull Calves"
+    folder: "_data/bull-calves"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Registered Name", name: "title", widget: "string"}
+      - {label: "Sire", name: "sire", widget: "string"}
+      - {label: "Dam", name: "dam", widget: "string"}
+      - {label: "Date of Birth", name: "dob", widget: "string"}
+      - {label: "TLBAA Number", name: "tlbaa", widget: "string", default: "Pending"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Status", name: "status", widget: "select", options: ["Available", "Sold", "Not For Sale"], default: "Available"}
+      - {label: "Price", name: "price", widget: "string", required: false, hint: "Leave blank to show 'Contact for Price'"}
+
+  - name: "sale_pen"
+    label: "Sale Pen"
+    folder: "_data/sale-pen"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Registered Name", name: "title", widget: "string"}
+      - {label: "Sire", name: "sire", widget: "string"}
+      - {label: "Dam", name: "dam", widget: "string"}
+      - {label: "Date of Birth", name: "dob", widget: "string"}
+      - {label: "TLBAA Number", name: "tlbaa", widget: "string", default: "Pending"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Price", name: "price", widget: "string", required: false, hint: "Leave blank to show 'Contact for Price'"}
+
+  - name: "sold"
+    label: "Sold Longhorns"
+    folder: "_data/sold"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Registered Name", name: "title", widget: "string"}
+      - {label: "Photo", name: "photo", widget: "image"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "_data/pages/home.yml"
+        fields:
+          - {label: "About Title", name: "about_title", widget: "string"}
+          - {label: "About Text (Paragraph 1)", name: "about_p1", widget: "text"}
+          - {label: "About Text (Paragraph 2)", name: "about_p2", widget: "text"}
+
+      - label: "Contact Info"
+        name: "contact"
+        file: "_data/pages/contact.yml"
+        fields:
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Location", name: "location", widget: "string"}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – RLG Longhorns</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><div class="logo-wrap"><img src="images/ranch/ranch-logo.jpg" alt="RLG Longhorns Logo" class="logo-img" /><div class="logo-text"><span class="logo-main">RLG Longhorns</span><span class="logo-sub">Cameron, Texas · Est. 2020</span></div></div><button class="nav-toggle">&#9776;</button><nav class="main-nav"><a href="index.html" class="nav-link">Home</a><a href="bulls.html" class="nav-link">Bulls</a><a href="cows.html" class="nav-link">Cows</a><a href="heifers.html" class="nav-link">Heifers</a><a href="steers.html" class="nav-link">Steers</a><a href="bull-calves.html" class="nav-link">Bull Calves</a><a href="sale-pen.html" class="nav-link">Sale Pen</a><a href="sold.html" class="nav-link">Sold</a><a href="beef.html" class="nav-link">Longhorn Beef</a><a href="contact.html" class="nav-link nav-cta active">Contact</a></nav></div></header>
+
+  <div class="page-hero"><div class="container"><p class="section-eyebrow">RLG Longhorns</p><h1 class="section-title">Contact Robert</h1><p class="page-hero-sub">We'd love to talk cattle — reach out anytime</p></div></div>
+
+  <section class="section"><div class="container contact-page">
+    <div class="contact-layout">
+
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p style="color:var(--text-mid);margin-bottom:2rem;">Whether you're interested in purchasing, have questions about bloodlines, or just want to talk Longhorns — don't hesitate to reach out.</p>
+
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-value"><a href="tel:2546271160">254-627-1160</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value"><a href="mailto:robert@rlglonghorns.com">robert@rlglonghorns.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">Cameron, Texas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h3>Send a Message</h3>
+        <!-- Netlify form — the netlify attribute enables free form submissions -->
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display:none;"><input name="bot-field" /></p>
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="555-555-5555" />
+          </div>
+
+          <div class="form-group">
+            <label for="interest">I'm Interested In</label>
+            <select id="interest" name="interest">
+              <option value="">Select an option...</option>
+              <option value="Cows">Cows</option>
+              <option value="Heifers">Heifers</option>
+              <option value="Bull Calves">Bull Calves</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Longhorn Beef">Longhorn Beef</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you're looking for..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div></section>
+
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-logo"><span class="logo-main">RLG Longhorns</span><span class="footer-location">Cameron, Texas</span></div><nav class="footer-nav"><a href="bulls.html">Bulls</a><a href="cows.html">Cows</a><a href="heifers.html">Heifers</a><a href="steers.html">Steers</a><a href="bull-calves.html">Bull Calves</a><a href="sale-pen.html">Sale Pen</a><a href="sold.html">Sold</a><a href="beef.html">Longhorn Beef</a><a href="contact.html">Contact</a></nav><p class="footer-copy">&copy; 2025 RLG Longhorns · All Rights Reserved</p></div></footer>
+  <script src="js/main.js"></script>
+</body></html>
