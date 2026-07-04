@@ -1,61 +1,314 @@
-RLG Longhorns, LLC Logo
-RLG Longhorns, LLC Cameron, Texas · Est. 2020
-☰
-Home Bulls Cows Heifers Steers Bull Calves Sale Pen Sold Longhorn Beef Good Day Beef Contact
-RLG Longhorns Ranch
-Registered Texas Longhorns
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RLG Longhorns, LLC – Registered Texas Longhorns | Cameron, TX</title>
+  <meta name="description" content="RLG Longhorns, LLC – Registered Texas Longhorn breeding stock located in Cameron, TX. Quality registered Longhorns for sale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── Good Day Beef banner ── */
+    .gdb-banner {
+      background: #1a1008;
+      border-top: 2px solid #c9a84c;
+      border-bottom: 2px solid #c9a84c;
+      padding: 4rem 2rem;
+    }
 
-RLG Longhorns, LLC
+    .gdb-banner-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
 
-Quality Breeding Stock · Cameron, Texas
+    .gdb-banner-text .section-eyebrow {
+      display: block;
+      margin-bottom: 0.75rem;
+    }
 
-View Available Cattle Contact Robert
-About the Ranch
+    .gdb-banner-text h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      color: #e8b86d;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
 
-A Passion for the Longhorn Breed
+    .gdb-banner-text p {
+      color: rgba(247,241,232,0.7);
+      font-size: 1.05rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
 
-RLG Longhorns, LLC is a small, family-run operation located in Cameron, Texas, dedicated to raising quality registered Texas Longhorn breeding stock. With five years of hands-on experience and a commitment to the breed, every animal in our herd is TLBAA registered and raised with care.
+    .gdb-stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
 
-We take pride in the bloodlines we've built and the animals we produce. Whether you're looking to start your own herd or add quality genetics to an existing one, we'd love to talk cattle.
+    .gdb-stat {
+      text-align: center;
+    }
 
-Get in Touch
-5 Years Ranching
-TLBAA Registered Stock
-TX Cameron, Texas
-Browse the Herd
+    .gdb-stat-num {
+      display: block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #e8b86d;
+      line-height: 1;
+    }
 
-Our Cattle
+    .gdb-stat-label {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(232,184,109,0.6);
+      margin-top: 0.25rem;
+    }
 
- Bulls
-Herd Sire
- Cows
-Cows
- Heifers
-Heifers
- Bull Calves
-Bull Calves
- Steers
-Steers
- Longhorn Beef
-Longhorn Beef
-Looking to Buy Beef?
+    .gdb-btn {
+      display: inline-block;
+      background: #c9a84c;
+      color: #1a1008;
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .gdb-btn:hover { background: #e8c97a; color: #1a1008; }
 
-Introducing Good Day Beef
-The beef side of RLG Longhorns, LLC. Texas Longhorn beef raised right here in Cameron — leaner than chicken, higher in Omega-3s, and sold direct from our ranch to your table.
+    .gdb-logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-140
-CALORIES / 3.5 OZ
-82%
-LESS FAT THAN CHOICE BEEF
-26g
-PROTEIN PER SERVING
-VISIT GOOD DAY BEEF →
-Good Day Beef
-Interested in Our Cattle?
+    .gdb-logo-wrap img {
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.6));
+    }
 
-Contact Robert directly — we're happy to answer any questions.
+    /* nav beef link style */
+    .nav-link-beef {
+      background: #c9a84c !important;
+      color: #1a1008 !important;
+      border-radius: 3px;
+      padding: 0.4rem 0.9rem !important;
+      font-weight: 700 !important;
+    }
+    .nav-link-beef:hover { background: #e8c97a !important; }
 
-254-627-1160 robert@rlglonghorns.com Send a Message
-RLG Longhorns, LLC Cameron, Texas
-Bulls Cows Heifers Steers Bull Calves Sale Pen Sold Longhorn Beef Contact Good Day Beef
-© 2026 RLG Longhorns, LLC · All Rights Reserved
+    @media (max-width: 768px) {
+      .gdb-banner-inner { grid-template-columns: 1fr; }
+      .gdb-logo-wrap { order: -1; }
+      .gdb-logo-wrap img { max-width: 220px; }
+    }
+  </style>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="images/ranch/ranch-logo.jpg" alt="RLG Longhorns, LLC Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-main">RLG Longhorns, LLC</span>
+          <span class="logo-sub">Cameron, Texas · Est. 2020</span>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="bulls.html" class="nav-link">Bulls</a>
+        <a href="cows.html" class="nav-link">Cows</a>
+        <a href="heifers.html" class="nav-link">Heifers</a>
+        <a href="steers.html" class="nav-link">Steers</a>
+        <a href="bull-calves.html" class="nav-link">Bull Calves</a>
+        <a href="sale-pen.html" class="nav-link">Sale Pen</a>
+        <a href="sold.html" class="nav-link">Sold</a>
+        <a href="beef.html" class="nav-link">Longhorn Beef</a>
+        <a href="https://www.gooddaybeef.com" target="_blank" rel="noopener" class="nav-link nav-link-beef">Good Day Beef</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-img-wrap">
+      <img src="images/ranch/hero.jpg" alt="RLG Longhorns Ranch" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Registered Texas Longhorns</p>
+      <h1 class="hero-title">RLG Longhorns, LLC</h1>
+      <p class="hero-tagline">Quality Breeding Stock · Cameron, Texas</p>
+      <div class="hero-buttons">
+        <a href="cows.html" class="btn btn-primary">View Available Cattle</a>
+        <a href="contact.html" class="btn btn-outline">Contact Robert</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-eyebrow">About the Ranch</p>
+          <h2 class="section-title">A Passion for the Longhorn Breed</h2>
+          <p class="about-body">RLG Longhorns, LLC is a small, family-run operation located in Cameron, Texas, dedicated to raising quality registered Texas Longhorn breeding stock. With five years of hands-on experience and a commitment to the breed, every animal in our herd is TLBAA registered and raised with care.</p>
+          <p class="about-body">We take pride in the bloodlines we've built and the animals we produce. Whether you're looking to start your own herd or add quality genetics to an existing one, we'd love to talk cattle.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:1.5rem;">Get in Touch</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Years Ranching</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">TLBAA</span>
+            <span class="stat-label">Registered Stock</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">TX</span>
+            <span class="stat-label">Cameron, Texas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CATTLE -->
+  <section class="featured section section-alt">
+    <div class="container">
+      <p class="section-eyebrow">Browse the Herd</p>
+      <h2 class="section-title">Our Cattle</h2>
+      <div class="category-grid">
+        <a href="bulls.html" class="category-card">
+          <img src="images/bulls/rlg-granite.jpg" alt="Bulls" />
+          <div class="category-label">Herd Sire</div>
+        </a>
+        <a href="cows.html" class="category-card">
+          <img src="images/cows/skh-whatagirl.jpg" alt="Cows" />
+          <div class="category-label">Cows</div>
+        </a>
+        <a href="heifers.html" class="category-card">
+          <img src="images/heifers/rlg-shamrocks-gem.jpg" alt="Heifers" />
+          <div class="category-label">Heifers</div>
+        </a>
+        <a href="bull-calves.html" class="category-card">
+          <img src="images/bull-calves/rlg-what-a-calf.jpg" alt="Bull Calves" />
+          <div class="category-label">Bull Calves</div>
+        </a>
+        <a href="steers.html" class="category-card">
+          <img src="images/steers/jt-weston.jpg" alt="Steers" />
+          <div class="category-label">Steers</div>
+        </a>
+        <a href="beef.html" class="category-card">
+          <img src="images/beef/texas-longhorn-beef.png" alt="Longhorn Beef" />
+          <div class="category-label">Longhorn Beef</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOD DAY BEEF BANNER -->
+  <section class="gdb-banner">
+    <div class="gdb-banner-inner">
+      <div class="gdb-banner-text">
+        <p class="section-eyebrow">Looking to Buy Beef?</p>
+        <h2>Introducing Good Day Beef</h2>
+        <p>The beef side of RLG Longhorns, LLC. Texas Longhorn beef raised right here in Cameron — leaner than chicken, higher in Omega-3s, and sold direct from our ranch to your table.</p>
+        <div class="gdb-stats">
+          <div class="gdb-stat">
+            <span class="gdb-stat-num">140</span>
+            <span class="gdb-stat-label">Calories / 3.5 oz</span>
+          </div>
+          <div class="gdb-stat">
+            <span class="gdb-stat-num">82%</span>
+            <span class="gdb-stat-label">Less Fat Than Choice Beef</span>
+          </div>
+          <div class="gdb-stat">
+            <span class="gdb-stat-num">26g</span>
+            <span class="gdb-stat-label">Protein Per Serving</span>
+          </div>
+        </div>
+        <a href="https://www.gooddaybeef.com" target="_blank" rel="noopener" class="gdb-btn">Visit Good Day Beef &rarr;</a>
+      </div>
+      <div class="gdb-logo-wrap">
+        <img src="images/gooddaybeef-logo.png" alt="Good Day Beef" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <section class="contact-strip">
+    <div class="container contact-strip-inner">
+      <div>
+        <h2 class="strip-title">Interested in Our Cattle?</h2>
+        <p class="strip-sub">Contact Robert directly — we're happy to answer any questions.</p>
+      </div>
+      <div class="strip-contact">
+        <a href="tel:2546271160" class="strip-link">254-627-1160</a>
+        <a href="mailto:robert@rlglonghorns.com" class="strip-link">robert@rlglonghorns.com</a>
+        <a href="contact.html" class="btn btn-white">Send a Message</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-main">RLG Longhorns, LLC</span>
+        <span class="footer-location">Cameron, Texas</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="bulls.html">Bulls</a>
+        <a href="cows.html">Cows</a>
+        <a href="heifers.html">Heifers</a>
+        <a href="steers.html">Steers</a>
+        <a href="bull-calves.html">Bull Calves</a>
+        <a href="sale-pen.html">Sale Pen</a>
+        <a href="sold.html">Sold</a>
+        <a href="beef.html">Longhorn Beef</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.gooddaybeef.com" target="_blank" rel="noopener">Good Day Beef</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 RLG Longhorns, LLC · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
